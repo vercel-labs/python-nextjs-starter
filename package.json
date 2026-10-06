@@ -1,0 +1,10 @@
+{
+  "name": "nextjs-python-bookstore",
+  "private": true,
+  "scripts": {
+    "dev:services": "vercel dev -L",
+    "check": "npm --prefix frontend run typecheck && npm --prefix frontend run lint",
+    "build": "npm --prefix frontend run build",
+    "test": "cd backend && .venv/bin/python -m pytest -q"
+  }
+}
